@@ -8,8 +8,13 @@ public class App {
     public static void main(String[] args) {
 //       PalindromChecker palindromChecker = new PalindromChecker(121);
 //        System.out.println(palindromChecker.isPalindrom);
-        RomanToInt romanToInt = new RomanToInt("MCMXCIV");
-        System.out.println(romanToInt.value);
+
+//        RomanToInt romanToInt = new RomanToInt("MCMXCIV");
+//        System.out.println(romanToInt.value);
+
+        String[] StringArray = {"flower","flower","flower"};
+        LongestPrefix longestPrefix = new LongestPrefix(StringArray);
+        System.out.println(longestPrefix.prefixString);
 
     }
 }

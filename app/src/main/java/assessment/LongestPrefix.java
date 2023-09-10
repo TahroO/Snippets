@@ -4,7 +4,7 @@ public class LongestPrefix {
     String prefixString = "";
 
     public LongestPrefix(String[] strings) {
-
+        prefixString = prefixCheck(strings);
     }
 
     protected String prefixCheck(String[] strings) {
@@ -12,21 +12,22 @@ public class LongestPrefix {
         String firstWord = strings[0];
         for (int i = 1; i < strings.length; i++) {
             String secondWord = strings[i];
-            if (isMatch(firstWord, secondWord)) {
-
+            for (int j = i - 1; j < firstWord.length(); j++){
+                char charOne = firstWord.charAt(j);
+                char charTwo = secondWord.charAt(j);
+                if (isMatch(charOne, charTwo)) {
+                    output += charOne;
+                    break;
+                } else {
+                    return output;
+                }
             }
         }
         return output;
     }
 
-    protected boolean isMatch(String firstWord, String secondWord) {
-        for(int i = 0; i < firstWord.length(); i++) {
-            char firstChar = firstWord.charAt(i);
-            char secondChar = secondWord.charAt(i);
-            if (firstChar != secondChar) {
-                return false;
-            }
-        }
-        return true;
+
+    protected boolean isMatch(char a, char b) {
+        return(a == b);
     }
 }
