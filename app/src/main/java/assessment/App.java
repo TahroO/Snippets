@@ -12,7 +12,7 @@ public class App {
 //        RomanToInt romanToInt = new RomanToInt("MCMXCIV");
 //        System.out.println(romanToInt.value);
 
-        String[] StringArray = {"flower","flower","flower"};
+        String[] StringArray = {"flower","flower","flowe"};
         LongestPrefix longestPrefix = new LongestPrefix(StringArray);
         System.out.println(longestPrefix.prefixString);
 
