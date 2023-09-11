@@ -12,9 +12,11 @@ public class App {
 //        RomanToInt romanToInt = new RomanToInt("MCMXCIV");
 //        System.out.println(romanToInt.value);
 
-        String[] StringArray = {"flower","flow","flight"};
-        LongestPrefix longestPrefix = new LongestPrefix(StringArray);
-        System.out.println(longestPrefix.prefixString);
+//        String[] StringArray = {"flower","flow","flight"};
+//        LongestPrefix longestPrefix = new LongestPrefix(StringArray);
+//        System.out.println(longestPrefix.prefixString);
 
+        MergeString mergeString = new MergeString("abcd", "pq");
+        System.out.println(mergeString.output);
     }
 }
