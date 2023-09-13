@@ -16,7 +16,19 @@ public class App {
 //        LongestPrefix longestPrefix = new LongestPrefix(StringArray);
 //        System.out.println(longestPrefix.prefixString);
 
-        MergeString mergeString = new MergeString("abcd", "pq");
-        System.out.println(mergeString.output);
+//        MergeString mergeString = new MergeString("abcd", "pq");
+//        System.out.println(mergeString.output);
+
+//        ValidParentheses validParentheses = new ValidParentheses("()[}{}");
+//        System.out.println(validParentheses.isValid);
+
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.addNode(10);
+        binaryTree.addNode(9);
+        binaryTree.addNode(11);
+        binaryTree.addNode(8);
+        binaryTree.addNode(1);
+//        binaryTree.printLeftPart();
+
     }
 }
