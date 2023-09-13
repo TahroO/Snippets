@@ -25,13 +25,19 @@ public class BinaryTree {
         }
         Node actualNode = root;
         while (inserting) {
-            if (value > actualNode.value && actualNode.right == null) {
+            if (value > actualNode.value && actualNode.right != null) {
+                actualNode = actualNode.right;
+            } else {
                 actualNode.right = newNode;
                 inserting = false;
-            } else if (value < actualNode.value && actualNode.left == null) {
+            }
+            if (value < actualNode.value && actualNode.left != null) {
+                actualNode = actualNode.left;
+            } else {
                 actualNode.left = newNode;
                 inserting = false;
-            } else if (value == actualNode.value) {
+            }
+            if (value == actualNode.value) {
                 actualNode.count++;
                 inserting = false;
             }
@@ -41,7 +47,7 @@ public class BinaryTree {
     protected void printLeftTree() {
         if (root != null) {
             Node actualNode = root;
-            while (actualNode.left != null) {
+            while (actualNode != null) {
                 System.out.println("[" + actualNode.value + "]");
                 System.out.println("|");
                 actualNode = actualNode.left;
