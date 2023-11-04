@@ -3,8 +3,9 @@
  */
 package assessment;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+
+import static org.junit.Assert.assertNotNull;
 
 class AppTest {
     @Test void appHasAGreeting() {

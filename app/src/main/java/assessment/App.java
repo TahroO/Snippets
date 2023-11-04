@@ -25,9 +25,9 @@ public class App {
         BinaryTree binaryTree = new BinaryTree();
         binaryTree.addNode(10);
         binaryTree.addNode(9);
-//        binaryTree.addNode(11);
-//        binaryTree.addNode(8);
-//        binaryTree.addNode(1);
+        binaryTree.addNode(11);
+        binaryTree.addNode(8);
+        binaryTree.addNode(1);
         binaryTree.printLeftPart();
 
     }
