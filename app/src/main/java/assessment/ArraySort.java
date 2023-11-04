@@ -30,7 +30,7 @@ public class ArraySort {
 
     private void outputArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+            System.out.println("ArrayIndex " + i + " : " + array[i]);
         }
     }
 
@@ -51,7 +51,7 @@ public class ArraySort {
     }
 
     public static void main(String[] args) {
-        ArraySort test = new ArraySort(10);
+        ArraySort test = new ArraySort(100);
     }
 
 }
